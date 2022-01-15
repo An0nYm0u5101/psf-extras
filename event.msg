@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-event=1
+event=0
 if [[ $event == 1 ]]
 then
 echo "event=1" > $TMPDIR/event.log
