@@ -1,6 +1,18 @@
 #!/usr/bin/bash
 
 event=0
+
+DATE=$(date +%m\-%d)
+
+if [[ $DATE == "04-01" ]]
+then
+event=1
+echo "todayEvent=\"Happy Anniversary to all 'Psfconsole' Users.
+Psfconsole is celebrating its 1st birthday today.
+Pentesting Framework founded on April 01, 2021.
+\"" >> $TMPDIR/event.log
+fi
+
 if [[ $event == 1 ]]
 then
 echo "event=1" > $TMPDIR/event.log
