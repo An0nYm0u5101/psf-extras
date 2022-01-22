@@ -10,12 +10,12 @@ event=sp
 echo "todayEvent=\"Happy Anniversary to all 'Psfconsole' Users.
 Psfconsole is celebrating its 1st birthday today.
 Pentesting Framework founded on April 01, 2021.
-\"" >> $TMPDIR/event.log
+\"" > $TMPDIR/event.log
 fi
 
 if [[ $event == "sp" ]]
 then
-echo "event=1" > $TMPDIR/event.log
+echo "event=1" >> $TMPDIR/event.log
 fi
 
 if [[ $event == 1 ]]
